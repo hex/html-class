@@ -9,9 +9,24 @@
     margin: 0 auto;
     width: 980px;
     height: 710px;
-    background-color: red;
 }
 /*Ionut*/
+.aside {
+    display: inline;
+    float: left;
+    width: 225px;
+    height: 390px;
+    border: 1px solid black;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    border-radius: 3px;
+}
+.aside-header {
+    width: 225px;
+    height: 35px;
+
+}
 
 
 
