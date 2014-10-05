@@ -3,4 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #C3FAE3;
 }
+.container {
+    margin: 0 auto;
+    width: 980px;
+    height: 710px;
+    background-color: red;
+}
+/*Ionut*/
+
+
+
+/*Bogdan*/
