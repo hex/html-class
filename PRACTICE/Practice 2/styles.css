@@ -130,6 +130,7 @@ label{
 	height: 35px;
 	font-size: 18px;
 	padding: 5px 10px;
+	border-radius: 5px;
 }
 
 .edit button{
@@ -152,6 +153,16 @@ label{
 	border-radius: 5px;
 }
 
- span{
-	margin-top: 20px;
+.delete-account h6{
+	background-color: red;
+	color: white;
+}
+
+.delete-account button{
+	color: red;
+}
+
+.security{
+	margin: 10px 10px;
+	color: red;
 }
