@@ -3,17 +3,63 @@
     margin: 0;
     box-sizing: border-box;
     font-family: arial;
+    text-decoration: none;
 }
 
 /*Ionut:*/
 .side-bar-container {
     float: left;
-    width: 250px;
-    background-color: #2D2D2D;
+    width: 270px;
+    background-color: #2C3E50;
 /*Height used just for reference!!!*/
     height: 900px;
 }
+.side-bar {
+    margin: 0 auto;
+    float: center;
+    width: 210px;
+    /*background-color: grey;*/
+}
+.unpin {
+    height: 25px;
+    width: 100%;
+    margin-top: 10px;
 
+}
+.unpin a{
+    float: right;
+    line-height: 18px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 10px;
+    border-radius: 2px;
+    color: #687582;
+    border: 1px solid #687582;
+}
+.unpin a:hover {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.menu {
+    line-height: 15px;
+}
+.menu-option {
+    /*padding: 5px;*/
+    font-size: 15px;
+}
+.menu a{
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.menu img {
+    /*margin-left: 5px;*/
+    margin-top: 8px;
+}
+
+.menu span {
+    float: right;
+    color: #FFFFFF;
+}
 
 
 
@@ -59,7 +105,7 @@
 }
 
 /*Makes the placeholder disappear in Chrome*/
-input:focus::-webkit-input-placeholder  { 
+input:focus::-webkit-input-placeholder  {
     opacity: 0;
 }
 
