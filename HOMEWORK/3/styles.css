@@ -58,6 +58,20 @@
     text-align: left;
 }
 
+/*Makes the placeholder disappear in Chrome*/
+input:focus::-webkit-input-placeholder  { 
+    opacity: 0;
+}
+
+/*Makes the placeholder disappear in Mozilla*/
+input:focus::-moz-placeholder {
+	color:transparent;
+}
+
+input:-moz-placeholder   {
+	color:transparent;
+}
+
 .page-title a{
 	float: right;
 	margin-right: 15px;
@@ -67,8 +81,12 @@
 	width: 18px;
 	height: 18px;
 	margin-top: 7px;
+	opacity: 0.7;
 }
 
+.page-title img:hover{
+	opacity: 1;
+}
 
 .page-title small{
 	position: relative;
@@ -141,7 +159,9 @@ a.margin-right{
 	margin-top: 40px;
 	font-size: 12px;
 }
-
+.articles a:hover{
+	color: #929292;
+}
 .articles small{
 	float: right;
 	margin-top: 40px;
@@ -149,7 +169,8 @@ a.margin-right{
 	margin-right: 5px;
 }
 
-
+/*Styles for the scrollbar.Only for Chrome*/
+/*Firefox doesn't support styles for scrollbars*/
 ::-webkit-scrollbar { width: 8px; height: 3px; margin-right: 5px;}
 ::-webkit-scrollbar-track {  background-color: #999;}
 ::-webkit-scrollbar-track-piece { background-color: #ffffff;}
