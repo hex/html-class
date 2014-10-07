@@ -60,14 +60,15 @@
 
 .page-title a{
 	float: right;
+	margin-right: 15px;
 }
 
 .page-title img{
-	width: 20px;
-	height: 20px;
-	margin-right: 15px;
-	margin-top: 5px;
+	width: 18px;
+	height: 18px;
+	margin-top: 7px;
 }
+
 
 .page-title small{
 	position: relative;
@@ -76,6 +77,11 @@
 	float: left;
 	font-size: 14px;
 	line-height: 14px;
+}
+
+a.margin-right{
+	position: relative;
+	margin-right: 50px;
 }
 
 .articles {
@@ -102,12 +108,12 @@
 	margin-bottom: 30px;
 }
 .articles div img{
-	width: 263px;
+	width: 262px;
 	height: 171px;
 }
 
 
-.margin-left{
+.article-margin-left{
 	margin-left: 34px;
 }
 
@@ -150,3 +156,4 @@
 ::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
 ::-webkit-scrollbar-corner { background-color: #999;}
 ::-webkit-resizer { background-color: #666;}
+
