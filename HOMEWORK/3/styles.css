@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: arial;
+}
+.container{
+	width:1349px;
+	margin: 0 auto;
 }
 /*Ionut:*/
 .side-bar-container {
@@ -18,7 +23,63 @@
 
 
 
-
-
-
 /*Bogdan:*/
+.right-container{
+	float: left;
+	width: 1099px;
+	padding: 30px;
+}
+
+.center-container{
+	width: 860px;
+	margin: 0 auto;
+}
+
+.page-title{
+	width: 100%;
+	padding: 10px;
+	float: left;
+
+}
+
+.page-title h3{
+	float: left;
+	font-size: 28px;
+	line-height: 28px;
+	position: relative;
+}
+
+
+.page-title input{
+	float: right;
+	height: 28px;
+	width: 177px;
+	border: 1px solid #BAB9B8;
+	border-radius: 3px;
+	background-image: url(http://www.clipartbest.com/cliparts/4cb/K7G/4cbK7Gggi.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 5px;
+    text-align: left;
+}
+
+.page-title a{
+	float: right;
+}
+
+.page-title img{
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+	margin-top: 5px;
+}
+
+.page-title span{
+	position: relative;
+	color:  #BAB9B8;
+	clear: both;
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+}
