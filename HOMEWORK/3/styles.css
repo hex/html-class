@@ -78,11 +78,7 @@ ul{
 }
 .category-option {
     margin-top: 15px;
-    padding: 5px;
-<<<<<<< HEAD
-  
-=======
->>>>>>> a4eb78782eb0e70d5773607a73ffbdb38a96f366
+ 
 }
 .category-option span {
     float: right;
@@ -92,26 +88,23 @@ ul{
 .category-option img{
     float: left;
     margin-top: -3px;
+
 }
 .category-option a {
     color: #FFFFFF;
-    margin-left: 5px;
+    margin-left: 2px;
     margin-top: 3px;
-    padding: 2px;
+    font-size: 11px;
+
 
 }
-.category-option-list li{
-    height: 20px;
-    margin-top: 5px;
-}
+
 .category-option li{
-<<<<<<< HEAD
 	height: 20px;
 	margin-top: 5px;
-=======
-    height: 20px;
-    margin-top: 5px;
->>>>>>> a4eb78782eb0e70d5773607a73ffbdb38a96f366
+	line-height: 15px;
+
+
 }
 
 
@@ -195,17 +188,10 @@ a.margin-right{
 }
 
 .articles {
-<<<<<<< HEAD
 	width: 860px;
 	margin: 0 auto;
 	position: relative;
 	margin-top: 100px;
-=======
-    width: 860px;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 100px;
->>>>>>> a4eb78782eb0e70d5773607a73ffbdb38a96f366
 
 }
 
@@ -255,6 +241,7 @@ a.margin-right{
     float: right;
     margin-top: 40px;
     font-size: 12px;
+    position: relative;
 }
 .articles a:hover{
     color: #929292;
