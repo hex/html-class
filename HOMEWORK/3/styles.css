@@ -25,7 +25,6 @@ fixed sidebar on all resolutions*/
     height: 25px;
     width: 100%;
     /*am scos margin-top de aici si am adaugat mai jos, la a*/
-
 }
 .unpin a{
     float: right;
@@ -78,7 +77,8 @@ ul{
 }
 .category-option {
     margin-top: 15px;
- 
+    padding: 5px;
+
 }
 .category-option span {
     float: right;
@@ -96,17 +96,14 @@ ul{
     margin-top: 3px;
     font-size: 11px;
 
-
 }
 
 .category-option li{
 	height: 20px;
 	margin-top: 5px;
 	line-height: 15px;
-
-
+    padding: 2px;
 }
-
 
 
 
@@ -188,6 +185,7 @@ a.margin-right{
 }
 
 .articles {
+
 	width: 860px;
 	margin: 0 auto;
 	position: relative;
