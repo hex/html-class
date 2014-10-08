@@ -13,8 +13,8 @@
     background-color: #2C3E50;
 /*changed the attribute values for height so that we can have a
 fixed sidebar on all resolutions*/
-  	position: fixed;
-  	min-height: 100%;
+    position: fixed;
+    min-height: 100%;
 }
 .side-bar {
     margin: 0 auto;
@@ -36,7 +36,7 @@ fixed sidebar on all resolutions*/
     border-radius: 2px;
     color: #687582;
     border: 1px solid #687582;
-  	margin-top: 10px; /*aici am adaugat margin-top*/
+    margin-top: 10px; /*aici am adaugat margin-top*/
 }
 .unpin a:hover {
     color: #FFFFFF;
@@ -53,8 +53,8 @@ fixed sidebar on all resolutions*/
 }
 .menu-option a{
     color: #FFFFFF;
-   	float: left;
-   	margin-left: 15px;
+    float: left;
+    margin-left: 15px;
     font-weight: bold;
 }
 .menu img {
@@ -70,7 +70,7 @@ fixed sidebar on all resolutions*/
 ul{
     list-style-type: none;
     font-size: 12px;
-    margin-left: 23px;
+    margin-left: 24px;
 }
 .category {
     margin-top: 40px;
@@ -78,63 +78,66 @@ ul{
 }
 .category-option {
     margin-top: 15px;
-    padding: 2px;
-    line-height: 20px;
+    padding: 5px;
 }
 .category-option span {
     float: right;
     color: #FFFFFF;
     font-size: 12px;
 }
-.category a {
-    line-height: 20px;
+.category-option img{
+    float: left;
+    margin-top: -3px;
+}
+.category-option a {
     color: #FFFFFF;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding: 2px;
 
 }
-.profile {
-    width: 100%;
-    border-top: 1px solid #687582;
-    margin-bottom: 0px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+.category-option-list li{
+    height: 20px;
+    margin-top: 5px;
 }
-.profile img{
-    margin-left: 10px;
-    margin-top: 10px;
+.category-option li{
+    height: 20px;
+    margin-top: 5px;
 }
+
+
 
 
 /*Bogdan:*/
 
 
 .article-container{
-	margin: 0 auto;
-	padding-left:150px;
-	padding-top: 50px;
-	max-width: 860px;
+    margin: 0 auto;
+    padding-left:150px;
+    padding-top: 50px;
+    max-width: 860px;
 }
 
 .page-title{
-	width: 860px;
-	margin: 0 auto;
+    width: 860px;
+    margin: 0 auto;
 
 }
 
 .page-title h3{
-	float: left;
-	font-size: 28px;
-	line-height: 28px;
+    float: left;
+    font-size: 28px;
+    line-height: 28px;
 }
 
 
 .page-title input{
-	float: right;
-	height: 28px;
-	width: 177px;
-	border: 1px solid #BAB9B8;
-	border-radius: 3px;
-	background-image: url(http://www.clipartbest.com/cliparts/4cb/K7G/4cbK7Gggi.png);
+    float: right;
+    height: 28px;
+    width: 177px;
+    border: 1px solid #BAB9B8;
+    border-radius: 3px;
+    background-image: url(http://www.clipartbest.com/cliparts/4cb/K7G/4cbK7Gggi.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -149,102 +152,102 @@ input:focus::-webkit-input-placeholder  {
 
 /*Makes the placeholder disappear in Mozilla*/
 input:focus::-moz-placeholder {
-	color:transparent;
+    color:transparent;
 }
 
 input:-moz-placeholder   {
-	color:transparent;
+    color:transparent;
 }
 
 .page-title a{
-	float: right;
+    float: right;
 }
 
 .page-title img{
-	margin-top: 3px;
-	opacity: 0.7;
+    margin-top: 3px;
+    opacity: 0.7;
 }
 
 .page-title img:hover{
-	opacity: 1;
+    opacity: 1;
 }
 
 .page-title small{
-	color:  #BAB9B8;
-	clear: right;
-	font-size: 14px;
-	line-height: 14px;
-	float: left;
+    color:  #BAB9B8;
+    clear: right;
+    font-size: 14px;
+    line-height: 14px;
+    float: left;
 }
 
 a.margin-right{
-	position: relative;
-	margin-right: 50px;
+    position: relative;
+    margin-right: 50px;
 }
 
 .articles {
-	width: 860px;
-	margin: 0 auto;
-	position: relative;
-	padding: 140px 0px 0px 0px;
+    width: 860px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
 
 }
 
 .articles span{
-	font-size: 16px;
-	line-height: 14px;
-	font-weight: bold;
-	color: #BAB9B8;
-	float: left;
-	width: 860px;
-	height: 16px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #BAB9B8;
+    float: left;
+    width: 860px;
+    height: 16px;
 }
 .articles div{
-	width: 264px;
-	height: 320px;
-	border: 1px solid #BAB9B8;
-	margin-top: 10px;
-	float: left;
-	margin-bottom: 30px;
+    width: 264px;
+    height: 320px;
+    border: 1px solid #BAB9B8;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 30px;
 }
 .articles div img{
-	width: 262px;
-	height: 171px;
+    width: 262px;
+    height: 171px;
 }
 
 
 .article-margin-left{
-	margin-left: 34px;
+    margin-left: 34px;
 }
 
 .articles h6{
-	margin:10px 0px 10px 10px;
-	color: #929292;
-	font-weight: bold;
+    margin:10px 0px 10px 10px;
+    color: #929292;
+    font-weight: bold;
 }
 
 .articles div p{
-	margin:10px;
-	color: #BAB9B8;
-	font-size: 10px;
+    margin:10px;
+    color: #BAB9B8;
+    font-size: 10px;
 }
 
 .articles a{
-	color: #BAB9B8;
-	text-decoration: none;
-	margin-right: 5px;
-	float: right;
-	margin-top: 40px;
-	font-size: 12px;
+    color: #BAB9B8;
+    text-decoration: none;
+    margin-right: 5px;
+    float: right;
+    margin-top: 40px;
+    font-size: 12px;
 }
 .articles a:hover{
-	color: #929292;
+    color: #929292;
 }
 .articles small{
-	float: right;
-	margin-top: 40px;
-	color: #BAB9B8;
-	margin-right: 5px;
+    float: right;
+    margin-top: 40px;
+    color: #BAB9B8;
+    margin-right: 5px;
 }
 
 /*Styles for the scrollbar.Only for Chrome*/
