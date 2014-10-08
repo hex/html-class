@@ -69,11 +69,26 @@ fixed sidebar on all resolutions*/
 }
 ul{
     list-style-type: none;
+    font-size: 12px;
 }
-.category a{
-    color: #FFFFFF;
+.category {
+    margin-top: 40px;
+    font-size: 14px;
 }
+.category-option {
+    margin-top: 15px;
+    padding: 2px;
 
+}
+.category-option span {
+    float: right;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.category a {
+    color: #FFFFFF;
+
+}
 
 
 
