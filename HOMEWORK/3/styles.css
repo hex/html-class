@@ -77,7 +77,8 @@ ul{
 }
 .category-option {
     margin-top: 15px;
-    padding: 2px;
+    padding: 5px;
+    
 
 }
 .category-option span {
@@ -85,12 +86,28 @@ ul{
     color: #FFFFFF;
     font-size: 12px;
 }
-.category a {
+.category-option img{
+	float: left;
+	margin-top: -3px;
+}
+.category-option a {
     color: #FFFFFF;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding: 2px;
 
 }
 
+.category-option-list li{
+	height: 20px;
+	margin-top: 5px;
+}
 
+.category-option li{
+	height: 20px;
+	margin-top: 5px;
+
+}
 
 
 /*Bogdan:*/
