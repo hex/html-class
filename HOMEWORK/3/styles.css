@@ -11,16 +11,15 @@
     float: left;
     width: 270px;
     background-color: #2C3E50;
-/*changed the attribute values for height so that we can have a 
+/*changed the attribute values for height so that we can have a
 fixed sidebar on all resolutions*/
   	position: fixed;
   	min-height: 100%;
 }
 .side-bar {
     margin: 0 auto;
-    float: center; /*=)))))))))))))))*/
+    /*float: center; =)))))))))))))))*/
     width: 210px;
-    /*background-color: grey;*/
 }
 .unpin {
     height: 25px;
@@ -38,7 +37,6 @@ fixed sidebar on all resolutions*/
     color: #687582;
     border: 1px solid #687582;
   	margin-top: 10px; /*aici am adaugat margin-top*/
-
 }
 .unpin a:hover {
     color: #FFFFFF;
@@ -49,29 +47,31 @@ fixed sidebar on all resolutions*/
     max-width: 210px;
 }
 .menu-option {
-    /*padding: 5px;*/
-    font-size: 15px;
-    height: 40px;
+    font-size: 14px;
+    height: 30px;
     padding: 5px;
 }
 .menu-option a{
     color: #FFFFFF;
    	float: left;
    	margin-left: 15px;
-
+    font-weight: bold;
 }
 .menu img {
-    /*margin-left: 5px;*/
     float: left;
     width: 18px;
     height: 18px;
-
 }
-
 .menu span {
     float: right;
     color: #FFFFFF;
-
+    font-size: 12px;
+}
+ul{
+    list-style-type: none;
+}
+.category a{
+    color: #FFFFFF;
 }
 
 
