@@ -78,8 +78,7 @@ ul{
 .category-option {
     margin-top: 15px;
     padding: 5px;
-    
-
+  
 }
 .category-option span {
     float: right;
@@ -106,7 +105,6 @@ ul{
 .category-option li{
 	height: 20px;
 	margin-top: 5px;
-
 }
 
 
@@ -191,7 +189,7 @@ a.margin-right{
 	width: 860px;
 	margin: 0 auto;
 	position: relative;
-	padding: 140px 0px 0px 0px;
+	margin-top: 100px;
 
 }
 
