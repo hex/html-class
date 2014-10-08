@@ -35,7 +35,7 @@ fixed sidebar on all resolutions*/
     border-radius: 2px;
     color: #687582;
     border: 1px solid #687582;
-    margin-top: 10px; /*aici am adaugat margin-top*/
+    margin-top: 12px; /*aici am adaugat margin-top*/
 }
 .unpin a:hover {
     color: #FFFFFF;
@@ -46,12 +46,12 @@ fixed sidebar on all resolutions*/
     max-width: 210px;
 }
 .menu-option {
-    font-size: 14px;
-    height: 30px;
+    font-size: 12px;
+    height: 25px;
     padding: 5px;
 }
 .menu-option a{
-    color: #FFFFFF;
+    color: #DEDEDE;
     float: left;
     margin-left: 15px;
     font-weight: bold;
@@ -60,10 +60,11 @@ fixed sidebar on all resolutions*/
     float: left;
     width: 18px;
     height: 18px;
+    margin-top: -3px;
 }
 .menu span {
     float: right;
-    color: #FFFFFF;
+    color: #DEDEDE;
     font-size: 12px;
 }
 ul{
@@ -73,7 +74,7 @@ ul{
 }
 .category {
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .category-option {
     margin-top: 15px;
@@ -81,7 +82,7 @@ ul{
 }
 .category-option span {
     float: right;
-    color: #FFFFFF;
+    color: #DEDEDE;
     font-size: 12px;
 }
 .category-option img{
@@ -89,18 +90,34 @@ ul{
     margin-top: -3px;
 }
 .category-option a {
-    color: #FFFFFF;
+    color: #DEDEDE;
     margin-left: 5px;
     margin-top: 3px;
-    padding: 2px;
 }
 .category-option li{
 	height: 20px;
 	margin-top: 5px;
-
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 5px;
 }
-
-
+.profile {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    border-top: 1px solid #687582;
+    padding: 10px;
+}
+.profile-three-dots {
+    float: right;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+.profile h4{
+    margin-top: 3px;
+    vertical-align: middle;
+}
 
 
 /*Bogdan:*/
