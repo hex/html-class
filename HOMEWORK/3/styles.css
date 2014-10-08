@@ -131,13 +131,10 @@ input:-moz-placeholder   {
 
 .page-title a{
 	float: right;
-	margin-right: 15px;
 }
 
 .page-title img{
-	width: 19px;
-	height: 19px;
-	margin-top: 7px;
+	margin-top: 3px;
 	opacity: 0.7;
 }
 
@@ -191,10 +188,6 @@ a.margin-right{
 
 .article-margin-left{
 	margin-left: 34px;
-}
-
-.article-content{
-	width: 15px;
 }
 
 .articles h6{
