@@ -70,6 +70,7 @@ fixed sidebar on all resolutions*/
 ul{
     list-style-type: none;
     font-size: 12px;
+    margin-left: 23px;
 }
 .category {
     margin-top: 40px;
@@ -78,7 +79,7 @@ ul{
 .category-option {
     margin-top: 15px;
     padding: 2px;
-
+    line-height: 20px;
 }
 .category-option span {
     float: right;
@@ -86,11 +87,22 @@ ul{
     font-size: 12px;
 }
 .category a {
+    line-height: 20px;
     color: #FFFFFF;
 
 }
-
-
+.profile {
+    width: 100%;
+    border-top: 1px solid #687582;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.profile img{
+    margin-left: 10px;
+    margin-top: 10px;
+}
 
 
 /*Bogdan:*/
