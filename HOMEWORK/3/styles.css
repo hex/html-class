@@ -11,19 +11,21 @@
     float: left;
     width: 270px;
     background-color: #2C3E50;
-/*Height used just for reference!!!*/
-    height: 900px;
+/*changed the attribute values for height so that we can have a 
+fixed sidebar on all resolutions*/
+  	position: fixed;
+  	min-height: 100%;
 }
 .side-bar {
     margin: 0 auto;
-    float: center;
+    float: center; /*=)))))))))))))))*/
     width: 210px;
     /*background-color: grey;*/
 }
 .unpin {
     height: 25px;
     width: 100%;
-    margin-top: 10px;
+    /*am scos margin-top de aici si am adaugat mai jos, la a*/
 
 }
 .unpin a{
@@ -35,30 +37,41 @@
     border-radius: 2px;
     color: #687582;
     border: 1px solid #687582;
+  	margin-top: 10px; /*aici am adaugat margin-top*/
+
 }
 .unpin a:hover {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
 .menu {
-    line-height: 15px;
+    margin-top: 15px;
+    max-width: 210px;
 }
 .menu-option {
     /*padding: 5px;*/
     font-size: 15px;
+    height: 40px;
+    padding: 5px;
 }
-.menu a{
+.menu-option a{
     color: #FFFFFF;
-    line-height: 30px;
+   	float: left;
+   	margin-left: 15px;
+
 }
 .menu img {
     /*margin-left: 5px;*/
-    margin-top: 8px;
+    float: left;
+    width: 18px;
+    height: 18px;
+
 }
 
 .menu span {
     float: right;
     color: #FFFFFF;
+
 }
 
 
@@ -66,19 +79,18 @@
 
 
 /*Bogdan:*/
-.right-container{
-	float: right;
-	width: 1099px;
-	padding: 30px;
-}
 
-.center-container{
-	width: 860px;
+
+.article-container{
 	margin: 0 auto;
+	padding-left:150px;
+	padding-top: 50px;
+	max-width: 860px;
 }
 
 .page-title{
 	width: 860px;
+	margin: 0 auto;
 
 }
 
@@ -86,7 +98,6 @@
 	float: left;
 	font-size: 28px;
 	line-height: 28px;
-	position: relative;
 }
 
 
@@ -124,8 +135,8 @@ input:-moz-placeholder   {
 }
 
 .page-title img{
-	width: 18px;
-	height: 18px;
+	width: 19px;
+	height: 19px;
 	margin-top: 7px;
 	opacity: 0.7;
 }
@@ -135,12 +146,11 @@ input:-moz-placeholder   {
 }
 
 .page-title small{
-	position: relative;
 	color:  #BAB9B8;
-	clear: both;
-	float: left;
+	clear: right;
 	font-size: 14px;
 	line-height: 14px;
+	float: left;
 }
 
 a.margin-right{
@@ -150,8 +160,10 @@ a.margin-right{
 
 .articles {
 	width: 860px;
-	float: left;
-	margin-top: 70px;
+	margin: 0 auto;
+	position: relative;
+	padding: 140px 0px 0px 0px;
+
 }
 
 .articles span{
@@ -223,4 +235,3 @@ a.margin-right{
 ::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
 ::-webkit-scrollbar-corner { background-color: #999;}
 ::-webkit-resizer { background-color: #666;}
-
