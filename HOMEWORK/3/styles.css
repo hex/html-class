@@ -67,6 +67,7 @@ fixed sidebar on all resolutions*/
     color: #DEDEDE;
     font-size: 12px;
 }
+
 ul{
     list-style-type: none;
     font-size: 12px;
@@ -77,7 +78,7 @@ ul{
     font-size: 12px;
 }
 .category-option {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 5px;
 
 }
@@ -101,7 +102,7 @@ ul{
 }
 
 .category-option li{
-	height: 20px;
+	height: 23px;
 	margin-top: 5px;
     font-size: 12px;
     line-height: 15px;
@@ -120,9 +121,16 @@ ul{
     margin-top: -3px;
     vertical-align: middle;
 }
-.profile h4{
-    margin-top: 3px;
-    vertical-align: middle;
+.profile a {
+    padding: 5px;
+    background-color: #FF6600;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.profile span {
+    font-size: 12px
+    color: #DEDEDE;
 }
 
 /*Bogdan:*/
