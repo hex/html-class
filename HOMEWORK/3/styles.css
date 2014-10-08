@@ -79,6 +79,7 @@ ul{
 .category-option {
     margin-top: 15px;
     padding: 5px;
+
 }
 .category-option span {
     float: right;
@@ -88,12 +89,17 @@ ul{
 .category-option img{
     float: left;
     margin-top: -3px;
+
 }
 .category-option a {
+
     color: #DEDEDE;
     margin-left: 5px;
     margin-top: 3px;
+
+
 }
+
 .category-option li{
 	height: 20px;
 	margin-top: 5px;
@@ -118,7 +124,6 @@ ul{
     margin-top: 3px;
     vertical-align: middle;
 }
-
 
 /*Bogdan:*/
 
@@ -198,10 +203,11 @@ a.margin-right{
 }
 
 .articles {
-    width: 860px;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 100px;
+
+	width: 860px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 100px;
 
 }
 
@@ -251,6 +257,7 @@ a.margin-right{
     float: right;
     margin-top: 40px;
     font-size: 12px;
+    position: relative;
 }
 .articles a:hover{
     color: #929292;
