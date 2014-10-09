@@ -15,16 +15,17 @@
 fixed sidebar on all resolutions*/
     position: fixed;
     min-height: 100%;
+    overflow:scroll;
 }
 .side-bar {
     margin: 0 auto;
     /*float: center; =)))))))))))))))*/
     width: 210px;
-
 }
 .unpin {
     height: 25px;
     width: 100%;
+    cursor:pointer;
     /*am scos margin-top de aici si am adaugat mai jos, la a*/
 }
 .unpin a{
@@ -56,6 +57,7 @@ fixed sidebar on all resolutions*/
     float: left;
     font-weight: bold;
     height: 18px;
+    cursor:pointer;
 }
 .menu span {
     float: left;
@@ -67,7 +69,6 @@ fixed sidebar on all resolutions*/
     float: left;
     width: 18px;
     height: 18px;
-    margin-top: -3px;
     margin-right: 5px;
     vertical-align: -5px;
 }
@@ -86,10 +87,12 @@ ul{
 .category {
     margin-top: 30px;
     font-size: 12px;
+
 }
 .category-option {
     margin-top: 5px;
     padding: 3px;
+
 }
 .category-option a {
     color: #DEDEDE;
@@ -106,7 +109,7 @@ ul{
 .category-option img{
     float: left;
     margin-right: 5px;
-    /*margin-top: -3px;*/
+    vertical-align: -5px;
 }
 .category-option li{
 	height: 23px;
@@ -124,34 +127,35 @@ ul{
 }
 .profile {
     position: absolute;
-    width: 100%;
     left: 0px;
     bottom: 0px;
     border-top: 1px solid #687582;
+    width: 100%;
 }
-
-.profile a {
-    padding: 5px;
-    background-color: #FF6600;
-    border-radius: 5px;
+.profile a{
+    height: 40x;
     color: #FFFFFF;
-    font-size: 12px;
-    height: 20px;
 }
-.profile span {
-    font-size: 12px
-    color: #DEDEDE;
-    line-height: 20px;
+.profile span{
+    line-height: 40px;
+    font-size: 12px;
+    margin-right: 15px;
 }
 .profile img {
     margin-right: 5px;
     vertical-align: -5px;
-    padding: 10px;
 }
-.profile-three-dots {
+.upgrade {
+    background-color: #FF6600;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.three-dots {
     float: right;
-    margin-top: -3px;
-    vertical-align: middle;
+    font-size: 30px;
+    margin-right: 10px
 }
 /*Bogdan:*/
 
@@ -255,6 +259,12 @@ a.margin-right{
     margin-top: 10px;
     float: left;
     margin-bottom: 30px;
+    border-radius: 3px;
+    cursor:pointer;
+
+}
+.articles div:hover{
+    border: 1px solid #6A696E;
 }
 .articles div img{
     width: 262px;
