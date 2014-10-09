@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 
-/*Ionut:*/
+/*===============================Ionut===============================*/
 .side-bar-container {
     float: left;
     width: 270px;
@@ -20,7 +20,6 @@ fixed sidebar on all resolutions*/
     margin: 0 auto;
     /*float: center; =)))))))))))))))*/
     width: 210px;
-
 }
 .unpin {
     height: 25px;
@@ -59,6 +58,10 @@ fixed sidebar on all resolutions*/
     height: 18px;
     cursor:pointer;
 }
+.menu-option a:active{
+    color: #FFFFFF;
+    background-color: yellow;
+}
 .menu span {
     float: left;
     color: #DEDEDE;
@@ -78,7 +81,6 @@ fixed sidebar on all resolutions*/
     font-size: 10px;
     line-height: 18px;
 }
-
 ul{
     list-style-type: none;
     font-size: 12px;
@@ -87,12 +89,10 @@ ul{
 .category {
     margin-top: 30px;
     font-size: 12px;
-
 }
 .category-option {
     margin-top: 5px;
     padding: 3px;
-
 }
 .category-option a {
     color: #DEDEDE;
@@ -123,7 +123,6 @@ ul{
     color: #DEDEDE;
     font-size: 10px;
     line-height: 20px;
-
 }
 .profile {
     position: absolute;
@@ -134,7 +133,7 @@ ul{
 }
 .profile a{
     height: 40x;
-    color: #FFFFFF;
+    color: #DEDEDE;
 }
 .profile span{
     line-height: 40px;
@@ -152,14 +151,16 @@ ul{
     color: #FFFFFF;
     font-size: 12px;
 }
-
 .three-dots {
     float: right;
     font-size: 30px;
     margin-right: 10px
-
+    color: #DEDEDE;
 }
-/*Bogdan:*/
+
+
+
+/*===============================Bogdan===============================*/
 
 
 .article-container{
