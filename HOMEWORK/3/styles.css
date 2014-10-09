@@ -20,6 +20,7 @@ fixed sidebar on all resolutions*/
     margin: 0 auto;
     /*float: center; =)))))))))))))))*/
     width: 210px;
+
 }
 .unpin {
     height: 25px;
@@ -42,30 +43,39 @@ fixed sidebar on all resolutions*/
     border: 1px solid #FFFFFF;
 }
 .menu {
-    margin-top: 15px;
+    margin-top: 20px;
+    /*Adaugat de Bogdan:*/
     max-width: 210px;
 }
 .menu-option {
     font-size: 12px;
     height: 25px;
-    padding: 5px;
 }
 .menu-option a{
     color: #DEDEDE;
     float: left;
-    margin-left: 15px;
     font-weight: bold;
+    height: 18px;
+}
+.menu span {
+    float: left;
+    color: #DEDEDE;
+    font-size: 12px;
+    line-height: 18px;
 }
 .menu img {
     float: left;
     width: 18px;
     height: 18px;
     margin-top: -3px;
+    margin-right: 5px;
+    vertical-align: -5px;
 }
-.menu span {
+.menu small {
     float: right;
-    color: #DEDEDE;/*
-    font-size: 12px;*/
+    color: #DEDEDE;
+    font-size: 10px;
+    line-height: 18px;
 }
 
 ul{
@@ -74,39 +84,43 @@ ul{
     margin-left: 24px;
 }
 .category {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 12px;
 }
 .category-option {
-    margin-top: 10px;
-    padding: 5px;
-
-}
-.category-option span {
-    float: right;
-    color: #DEDEDE;
-    font-size: 12px;
-}
-.category-option img{
-    float: left;
-    margin-top: -3px;
-
+    margin-top: 5px;
+    padding: 3px;
 }
 .category-option a {
-
     color: #DEDEDE;
     margin-left: 5px;
     margin-top: 3px;
-
-
+    line-height: 20px;
 }
-
+.category-option span {
+    float: left;
+    color: #DEDEDE;
+    font-size: 12px;
+    line-height: 20px;
+}
+.category-option img{
+    float: left;
+    margin-right: 5px;
+    /*margin-top: -3px;*/
+}
 .category-option li{
 	height: 23px;
 	margin-top: 5px;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 20px;
     padding-top: 5px;
+}
+.category-option small{
+    float: right;
+    color: #DEDEDE;
+    font-size: 10px;
+    line-height: 20px;
+
 }
 .profile {
     position: absolute;
@@ -114,6 +128,24 @@ ul{
     left: 0px;
     bottom: 0px;
     border-top: 1px solid #687582;
+}
+
+.profile a {
+    padding: 5px;
+    background-color: #FF6600;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 20px;
+}
+.profile span {
+    font-size: 12px
+    color: #DEDEDE;
+    line-height: 20px;
+}
+.profile img {
+    margin-right: 5px;
+    vertical-align: -5px;
     padding: 10px;
 }
 .profile-three-dots {
@@ -121,18 +153,6 @@ ul{
     margin-top: -3px;
     vertical-align: middle;
 }
-.profile a {
-    padding: 5px;
-    background-color: #FF6600;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-size: 12px;
-}
-.profile span {
-    font-size: 12px
-    color: #DEDEDE;
-}
-
 /*Bogdan:*/
 
 
