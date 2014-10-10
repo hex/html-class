@@ -5,29 +5,31 @@
     font-family: arial;
     text-decoration: none;
 }
-
 /*===============================Ionut===============================*/
+
 .side-bar-container {
     float: left;
     width: 270px;
     background-color: #2C3E50;
-/*changed the attribute values for height so that we can have a
+    /*changed the attribute values for height so that we can have a
 fixed sidebar on all resolutions*/
+    
     position: fixed;
     min-height: 100%;
 }
 .side-bar {
     margin: 0 auto;
     /*float: center; =)))))))))))))))*/
+    
     width: 210px;
 }
 .unpin {
     height: 25px;
     width: 100%;
-    cursor:pointer;
+    cursor: pointer;
     /*am scos margin-top de aici si am adaugat mai jos, la a*/
 }
-.unpin a{
+.unpin a {
     float: right;
     line-height: 18px;
     padding-right: 8px;
@@ -36,7 +38,8 @@ fixed sidebar on all resolutions*/
     border-radius: 2px;
     color: #687582;
     border: 1px solid #687582;
-    margin-top: 12px; /*aici am adaugat margin-top*/
+    margin-top: 12px;
+    /*aici am adaugat margin-top*/
 }
 .unpin a:hover {
     color: #FFFFFF;
@@ -45,20 +48,21 @@ fixed sidebar on all resolutions*/
 .menu {
     margin-top: 20px;
     /*Adaugat de Bogdan:*/
+    
     max-width: 210px;
 }
 .menu-option {
     font-size: 12px;
     height: 25px;
 }
-.menu-option a{
+.menu-option a {
     color: #DEDEDE;
     float: left;
     font-weight: bold;
     height: 18px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.menu-option a:active{
+.menu-option a:active {
     color: #FFFFFF;
     background-color: yellow;
 }
@@ -81,12 +85,10 @@ fixed sidebar on all resolutions*/
     font-size: 10px;
     line-height: 18px;
 }
-
-.align-AddContent{
+.align-AddContent {
     margin-left: 23px;
 }
-
-ul{
+ul {
     list-style-type: none;
     font-size: 12px;
     margin-left: 24px;
@@ -111,30 +113,28 @@ ul{
     font-size: 12px;
     line-height: 20px;
 }
-.category-option img{
+.category-option img {
     float: left;
     margin-right: 5px;
     vertical-align: -5px;
 }
-.category-option li{
-	height: 23px;
-	margin-top: 5px;
+.category-option li {
+    height: 23px;
+    margin-top: 5px;
     font-size: 12px;
     line-height: 20px;
     padding-top: 5px;
-
 }
-.category-option small{
+.category-option small {
     float: right;
     color: #DEDEDE;
     font-size: 10px;
     line-height: 20px;
 }
-a.align-more{
+a.align-more {
     margin-left: -90px;
 }
-
-.bold-text{
+.bold-text {
     font-weight: bold;
 }
 .profile {
@@ -146,11 +146,11 @@ a.align-more{
     height: 40px;
     line-height: 40px;
 }
-.profile a{
+.profile a {
     height: 40x;
     color: #DEDEDE;
 }
-.profile span{
+.profile span {
     font-size: 12px;
     margin-right: 15px;
 }
@@ -173,33 +173,24 @@ a.align-more{
     font-size: 30px;
     margin-top: -5px;
 }
-
-
-
 /*===============================Bogdan===============================*/
 
-
-.article-container{
+.article-container {
     margin: 0 auto;
-    padding-left:150px;
+    padding-left: 150px;
     padding-top: 30px;
     max-width: 860px;
 }
-
-.page-title{
+.page-title {
     width: 860px;
     margin: 0 auto;
-
 }
-
-.page-title h3{
+.page-title h3 {
     float: left;
     font-size: 28px;
     line-height: 28px;
 }
-
-
-.page-title input{
+.page-title input {
     float: right;
     height: 28px;
     width: 177px;
@@ -212,53 +203,43 @@ a.align-more{
     padding: 5px;
     text-align: left;
 }
-
 /*Makes the placeholder disappear in Chrome*/
-input:focus::-webkit-input-placeholder  {
+
+input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
-
 /*Makes the placeholder disappear in Mozilla*/
+
 input:focus::-moz-placeholder {
-    color:transparent;
+    color: transparent;
 }
-
-input:-moz-placeholder   {
-    color:transparent;
+input:-moz-placeholder {
+    color: transparent;
 }
-
-.page-title a{
+.page-title a {
     float: right;
-
 }
-
-.page-title img{
+.page-title img {
     margin-top: 3px;
 }
-
-.page-title small{
-    color:  #BAB9B8;
+.page-title small {
+    color: #BAB9B8;
     clear: right;
     font-size: 14px;
     line-height: 14px;
     float: left;
 }
-
-a.margin-right{
+a.margin-right {
     position: relative;
     margin-right: 20px;
 }
-
 .articles {
-
-	width: 860px;
-	margin: 0 auto;
-	position: relative;
-	margin-top: 100px;
-
+    width: 860px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
 }
-
-.articles span{
+.articles span {
     font-size: 16px;
     line-height: 14px;
     font-weight: bold;
@@ -267,7 +248,7 @@ a.margin-right{
     width: 860px;
     height: 16px;
 }
-.articles div{
+.articles div {
     width: 264px;
     height: 320px;
     border: 1px solid #BAB9B8;
@@ -275,37 +256,29 @@ a.margin-right{
     float: left;
     margin-bottom: 30px;
     border-radius: 3px;
-    cursor:pointer;
-
+    cursor: pointer;
 }
-.articles div:hover{
+.articles div:hover {
     border: 1px solid #6A696E;
-
 }
-.articles div img{
+.articles div img {
     width: 262px;
     height: 171px;
-
 }
-
-
-.article-margin-left{
+.article-margin-left {
     margin-left: 34px;
 }
-
-.articles h6{
-    margin:10px 0px 10px 10px;
+.articles h6 {
+    margin: 10px 0px 10px 10px;
     color: #929292;
     font-weight: bold;
 }
-
-.articles div p{
-    margin:10px;
+.articles div p {
+    margin: 10px;
     color: #BAB9B8;
     font-size: 10px;
 }
-
-.articles a{
+.articles a {
     text-decoration: none;
     margin-right: 5px;
     float: right;
@@ -314,27 +287,43 @@ a.margin-right{
     visibility: hidden;
     display: none;
 }
-.articles div:hover a{
+.articles div:hover a {
     color: #929292;
     display: block;
-  	visibility: visible;
+    visibility: visible;
 }
-.articles small{
+.articles small {
     float: right;
     margin-top: 40px;
     margin-right: 5px;
     visibility: hidden;
 }
-
-.articles div:hover small{
+.articles div:hover small {
     color: #929292;
-  	visibility: visible;
+    visibility: visible;
 }
 /*Styles for the scrollbar.Only for Chrome*/
 /*Firefox doesn't support styles for scrollbars*/
-::-webkit-scrollbar { width: 8px; height: 3px; margin-right: 5px;}
-::-webkit-scrollbar-track {  background-color: #999;}
-::-webkit-scrollbar-track-piece { background-color: #ffffff;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
-::-webkit-scrollbar-corner { background-color: #999;}
-::-webkit-resizer { background-color: #666;}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+    margin-right: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #999;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #666;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+    background-color: #999;
+}
+::-webkit-resizer {
+    background-color: #666;
+}
