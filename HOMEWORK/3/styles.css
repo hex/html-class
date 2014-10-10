@@ -130,19 +130,21 @@ ul{
     bottom: 0px;
     border-top: 1px solid #687582;
     width: 100%;
+    height: 40px;
+    line-height: 40px;
 }
 .profile a{
     height: 40x;
     color: #DEDEDE;
 }
 .profile span{
-    line-height: 40px;
     font-size: 12px;
     margin-right: 15px;
 }
 .profile img {
+    margin-left: 5px;
     margin-right: 5px;
-    vertical-align: -5px;
+    vertical-align: -15px;
 }
 .upgrade {
     background-color: #FF6600;
@@ -153,9 +155,9 @@ ul{
 }
 .three-dots {
     float: right;
-    font-size: 30px;
-    margin-right: 10px
+    margin-right: 20px
     color: #DEDEDE;
+    font-size: 30px;
 }
 
 
