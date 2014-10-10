@@ -81,6 +81,11 @@ fixed sidebar on all resolutions*/
     font-size: 10px;
     line-height: 18px;
 }
+
+.align-AddContent{
+    margin-left: 23px;
+}
+
 ul{
     list-style-type: none;
     font-size: 12px;
@@ -117,12 +122,20 @@ ul{
     font-size: 12px;
     line-height: 20px;
     padding-top: 5px;
+
 }
 .category-option small{
     float: right;
     color: #DEDEDE;
     font-size: 10px;
     line-height: 20px;
+}
+a.align-more{
+    margin-left: -90px;
+}
+
+.bold-text{
+    font-weight: bold;
 }
 .profile {
     position: absolute;
