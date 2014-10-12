@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: arial;
 }
-
 /*Bogdan incepe aici*/
 .header-container{
 	width: 100%;
@@ -34,3 +33,7 @@
 
 
 /*Ionut incepe aici*/
+
+.middle-container {
+    height: 300px;
+
