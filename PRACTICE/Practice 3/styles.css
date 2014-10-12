@@ -22,26 +22,25 @@
     float: right;
 }
 .menu-container li {
-	height: 72px;
-	float: right;
-	list-style-type: none;
-	padding: 20px 15px;
-	border-top: 4px solid white;
-}
-.menu-container li a{
-	font-size: 14px;
-	color: #808184;
-	font-weight: 700;
-	width: 100%;
-}
-.menu-container li:hover{	
-	border-top: 4px solid #5DCFCA;
     height: 72px;
     float: right;
     list-style-type: none;
     padding: 20px 15px;
     border-top: 4px solid white;
-
+}
+.menu-container li a {
+    font-size: 14px;
+    color: #808184;
+    font-weight: 700;
+    width: 100%;
+}
+.menu-container li:hover {
+    border-top: 4px solid #5DCFCA;
+    height: 72px;
+    float: right;
+    list-style-type: none;
+    padding: 20px 15px;
+    border-top: 4px solid white;
 }
 .menu-container li a {
     font-size: 14px;
@@ -58,9 +57,9 @@
 }
 .background {
     background-color: #808080;
-    
 }
 /*Ionut incepe aici*/
+
 .middle-container {
     position: relative;
     width: 100%;
