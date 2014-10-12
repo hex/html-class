@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: arial;
+    text-decoration: none;
 }
 /*Bogdan incepe aici*/
 
@@ -15,12 +16,11 @@
     width: 1000px;
     margin: 0 auto;
 }
-.menu-container{
-	height: 100%;
-	width: 504px;
-	float: right;
+.menu-container {
+    height: 100%;
+    width: 504px;
+    float: right;
 }
-
 .menu-container li {
 	height: 72px;
 	float: right;
@@ -36,22 +36,63 @@
 }
 .menu-container li:hover{	
 	border-top: 4px solid #5DCFCA;
-}
+    height: 72px;
+    float: right;
+    list-style-type: none;
+    padding: 20px 15px;
+    border-top: 4px solid white;
 
-.menu-container li a:hover{
-	color: #5DCFCA;
+}
+.menu-container li a {
+    font-size: 14px;
+    color: #808184;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+.menu-container li:hover {
+    border-top: 4px solid #5DCFCA;
+}
+.menu-container li a:hover {
+    color: #5DCFCA;
 }
 .background {
     background-color: #808080;
-
+    
+}
 /*Ionut incepe aici*/
-
 .middle-container {
     position: relative;
-    height: 300px;
     width: 100%;
     border: 10px solid yellow;
 }
 .middle-content-container {
     margin: 0 auto;
+    height: 300px;
+    width: 1000px;
+}
+.middle-content {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+    border: 5px solid red;
+    height: 300px;
+}
+.middle-content h5 {
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 50px;
+}
+.middle-content p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.middle-content ul {
+    margin-top: 55px;
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+.middle-content ul li a {
+    height: 27px;
 }
