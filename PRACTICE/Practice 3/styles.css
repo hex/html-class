@@ -5,35 +5,35 @@
     font-family: arial;
 }
 /*Bogdan incepe aici*/
-.header-container{
-	width: 100%;
-	height: 72px;
-}
 
-.header-container-align{
-	height: 100%;
-	width: 1000px;
-	margin: 0 auto;
-	border: 1px solid red;
-	padding: 10px;
+.header-container {
+    width: 100%;
+    height: 72px;
 }
-
+.header-container-align {
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 10px;
+}
 .menu-container li {
-	height: 100%;
-	float: right;
-	list-style-type: none;
-	color: #808184;
-
+    height: 100%;
+    float: right;
+    list-style-type: none;
+    color: #808184;
 }
-.background{
-	background-color: #808080;
+.background {
+    background-color: #808080;
 }
-
-
-
-
 /*Ionut incepe aici*/
 
 .middle-container {
+    position: relative;
     height: 300px;
-
+    width: 100%;
+    border: 10px solid yellow;
+}
+.middle-content-container {
+    margin: 0 auto;
+}
