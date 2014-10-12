@@ -31,12 +31,10 @@
 .menu-container li a{
 	font-size: 14px;
 	color: #808184;
-	font-weight: bold;
-	height: 100%;
+	font-weight: 700;
 	width: 100%;
 }
-.menu-container li:hover{
-	
+.menu-container li:hover{	
 	border-top: 4px solid #5DCFCA;
 }
 
