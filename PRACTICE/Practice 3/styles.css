@@ -23,8 +23,14 @@
 	float: right;
 	list-style-type: none;
 	color: #808184;
+	text-decoration: none;
+	border:1px solid red;
 
 }
+.menu-container li a{
+	text-decoration: none;
+}
+
 .background{
 	background-color: #808080;
 }
