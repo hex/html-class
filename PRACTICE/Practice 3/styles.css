@@ -16,39 +16,35 @@
     width: 1000px;
     margin: 0 auto;
 }
-.menu-container{
-	height: 100%;
-	width: 504px;
-	float: right;
+.menu-container {
+    height: 100%;
+    width: 504px;
+    float: right;
 }
-
 .menu-container li {
-	height: 72px;
-	float: right;
-	list-style-type: none;
-	padding: 20px 15px;
-	border-top: 4px solid white;
+    height: 72px;
+    float: right;
+    list-style-type: none;
+    padding: 20px 15px;
+    border-top: 4px solid white;
 }
-.menu-container li a{
-	font-size: 14px;
-	color: #808184;
-	font-weight: bold;
-	height: 100%;
-	width: 100%;
+.menu-container li a {
+    font-size: 14px;
+    color: #808184;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
 }
-.menu-container li:hover{
-	
-	border-top: 4px solid #5DCFCA;
+.menu-container li:hover {
+    border-top: 4px solid #5DCFCA;
 }
-
-.menu-container li a:hover{
-	color: #5DCFCA;
+.menu-container li a:hover {
+    color: #5DCFCA;
 }
 .background {
     background-color: #808080;
-
-/*Ionut incepe aici*/
-
+    /*Ionut incepe aici*/
+}
 .middle-container {
     position: relative;
     width: 100%;
@@ -80,4 +76,7 @@
     list-style-type: none;
     line-height: 30px;
     font-size: 14px;
+}
+.middle-content ul li a {
+    height: 27px;
 }
