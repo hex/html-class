@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: arial;
 }
 
 /*Bogdan incepe aici*/
@@ -13,6 +14,17 @@
 .header-container-align{
 	height: 100%;
 	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+.menu-container li {
+	height: 100%;
+	float: right;
+	list-style-type: none;
+	color: #808184;
+
 }
 .background{
 	background-color: #808080;
