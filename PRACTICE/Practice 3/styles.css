@@ -65,12 +65,25 @@
 }
 
 .background-image{
-	width: 1149px;
+	width: 1249px;
 	height: 100%;
 	margin: 0 auto;
-	border: 1px solid red;
 	background: url('https://getpocket.com/i/v3/slide01.jpg');
+	padding: 70px;
 }
+.signUp-container{
+	width: 325px;
+	height: 379px;
+	float: right;
+	border: 1px solid white;
+	padding: 10px;
+	line-height: 40px;
+}
+.signUp-container h3{
+	color: white;
+}
+
+
 /*Ionut incepe aici*/
 .middle-container {
     position: relative;
