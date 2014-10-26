@@ -45,11 +45,12 @@ ul {
     font-weight: normal;
 }
 .nav-bar-middle {
-    width: 1200px;
+    width: 900px;
     margin: 0 auto;
 }
 .search-bar {
-    width: 1120px;
+    width: 822px;
+    max-width: 1120px;
     height: 36px;
     margin-top: 10px;
     background-color: #5D96F5;
@@ -116,8 +117,14 @@ input.cmn-toggle-round:checked + label:after {
     margin-left: 25px;
 }
 .nav-bar-right {
-    width: 180px;
-    border: 1px solid red;
     float: right;
-    font-size: 10px;
+    width: 180px;
+    height: 100%;
+    border: 1px solid red;
+    background-image: url('images/spritesheet-nav.png');
+    text-indent: -9999px;
+}
+.nav-bar-right.hangouts {
+    background-repeat: no-repeat;
+    background-position: -5px -47px;
 }
