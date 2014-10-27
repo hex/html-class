@@ -29,7 +29,7 @@ ul {
     background-image: url('images/spritesheet-nav.png');
     width: 25px;
     height: 25px;
-    background-position: -5px -105px;
+    background-position: -5px -81px;
     background-repeat: no-repeat;
     text-indent: -9999px;
     display: inline-block;
@@ -46,7 +46,11 @@ ul {
 }
 .nav-bar-middle {
     width: 900px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    
+    float: left;
+    margin-left: 110px;
+    height: 56px;
 }
 .search-bar {
     width: 822px;
@@ -56,7 +60,7 @@ ul {
     background-color: #5D96F5;
     border: 1px solid #5D96F5;
     background-image: url('images/spritesheet-nav.png');
-    background-position: -5px -260px;
+    background-position: -5px -255px;
     background-repeat: no-repeat;
     padding-left: 72px;
 }
@@ -78,7 +82,7 @@ ul {
     top: 8px;
     left: 10px;
 }
-. input.cmn-toggle-round + label {
+input.cmn-toggle-round + label {
     padding: 1px;
     width: 50px;
     height: 25px;
@@ -108,7 +112,7 @@ input.cmn-toggle-round + label:after {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: margin 0.4s;
     background-image: url('images/spritesheet-nav.png');
-    background-position: -5px -172px;
+    background-position: -5px -155px;
 }
 input.cmn-toggle-round:checked + label:before {
     background-color: #D0DDF5;
@@ -118,13 +122,175 @@ input.cmn-toggle-round:checked + label:after {
 }
 .nav-bar-right {
     float: right;
-    width: 180px;
     height: 100%;
-    border: 1px solid red;
-    background-image: url('images/spritesheet-nav.png');
+    font-size: 8px;
     text-indent: -9999px;
 }
-.nav-bar-right.hangouts {
-    background-repeat: no-repeat;
+.nav-bar-right ul li {
+    float: left;
+}
+.nav-bar-right .hangouts {
+    background-image: url('images/spritesheet-nav.png');
     background-position: -5px -47px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: 16px 6px;
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+.nav-bar-right .hangouts:before {
+    content: "";
+}
+.nav-bar-right .hangouts:focus {
+    /* clicking on label should toggle the menu */
+    
+    outline-width: 0;
+    pointer-events: none;
+}
+.nav-bar-right .hangouts:focus .hangouts-onclick {
+    /*  opacity is 1 in opened state (see below) */
+    
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0px 3px 12px 0px rgba(50, 50, 50, 0.75);
+    /* don't let pointer-events affect descendant elements */
+    
+    pointer-events: auto;
+}
+.hangouts-onclick {
+    position: absolute;
+    z-index: 10;
+    margin-top: 40px;
+    /* use opacity to fake immediate toggle */
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
+.hangouts-onclick li {
+    height: 50px;
+}
+.hangouts-onclick a {
+    height: 60px width: 100%
+}
+.hangouts-onclick .chat-window strong {
+    float left;
+}
+.hangouts-onclick li input {
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #F5F5F5;
+}
+.hangouts-onclick li a span {
+    float: left;
+    margin-top: 20px;
+}
+.hangouts-onclick li a span strong {
+    float: left;
+    font-weight: normal;
+    color: #808080;
+}
+.hangouts-onclick li a span small {
+    float: left;
+    clear: both;
+    font-size: 11px;
+    color: #B3B3B3;
+}
+.nav-bar-right .apps {
+    background-image: url('images/spritesheet-nav.png');
+    background-position: -5px -215px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 13px 6px;
+}
+.nav-bar-right .notifications {
+    background-image: url('images/spritesheet-nav.png');
+    background-position: -5px -115px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 13px 6px;
+}
+.nav-bar-right .account {
+    background-image: url('images/spritesheet-nav.png');
+    background-position: -5px -5px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    margin: 12px 30px 12px 6px;
+    border-radius: 60px;
+}
+.nav-bar-right .hangouts {
+    background-image: url('images/spritesheet-nav.png');
+    background-position: -5px -47px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: 16px 6px;
+    list-style-type: none;
+}
+.nav-bar-right .hangouts {
+    position: relative;
+    display: inline-block;
+}
+.nav-bar-right .hangouts:before {
+    content: "";
+}
+.nav-bar-right .hangouts:focus {
+    /* clicking on label should toggle the menu */
+    
+    outline-width: 0;
+    pointer-events: none;
+}
+.nav-bar-right .hangouts:focus .hangouts-onclick {
+    /*  opacity is 1 in opened state (see below) */
+    
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0px 3px 12px 0px rgba(50, 50, 50, 0.75);
+    /* don't let pointer-events affect descendant elements */
+    
+    pointer-events: auto;
+}
+.hangouts-onclick {
+    position: absolute;
+    z-index: 1;
+    margin-top: 40px;
+    /* use opacity to fake immediate toggle */
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
+.hangouts-onclick li {
+    height: 50px;
+}
+.hangouts-onclick a {
+    height: 60px width: 100%
+}
+.hangouts-onclick .chat-window strong {
+    float left;
+}
+.hangouts-onclick li input {
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #F5F5F5;
+}
+.hangouts-onclick li a span {
+    float: left;
+    margin-top: 20px;
+}
+.hangouts-onclick li a span strong {
+    float: left;
+    font-weight: normal;
+    color: #808080;
+}
+.hangouts-onclick li a span small {
+    float: left;
+    clear: both;
+    font-size: 11px;
+    color: #B3B3B3;
 }

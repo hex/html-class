@@ -11,43 +11,43 @@
 }
 
 .sprite-hangouts {
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     background-position: -5px -47px;
 }
 
 .sprite-menu {
     width: 24px;
     height: 24px;
-    background-position: -5px -105px;
+    background-position: -5px -81px;
 }
 
 .sprite-notifications {
-    width: 19px;
-    height: 23px;
-    background-position: -5px -139px;
+    width: 30px;
+    height: 30px;
+    background-position: -5px -115px;
 }
 
 .sprite-pin-toggle-off {
     width: 25px;
     height: 25px;
-    background-position: -5px -172px;
+    background-position: -5px -155px;
 }
 
 .sprite-pin-toggle-on {
     width: 15px;
     height: 15px;
-    background-position: -5px -207px;
+    background-position: -5px -190px;
 }
 
 .sprite-right-menu {
-    width: 18px;
-    height: 18px;
-    background-position: -5px -232px;
+    width: 30px;
+    height: 30px;
+    background-position: -5px -215px;
 }
 
 .sprite-search {
     width: 70px;
     height: 36px;
-    background-position: -5px -260px;
+    background-position: -5px -255px;
 }
