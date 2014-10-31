@@ -1,3 +1,211 @@
+stylesheet-compose
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-compose {
+    width: 56px;
+    height: 56px;
+    background-position: -5px -5px;
+}
+
+.sprite-invite {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -71px;
+}
+
+.sprite-ionut {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -121px;
+}
+
+.sprite-plus {
+    width: 56px;
+    height: 56px;
+    background-position: -5px -171px;
+}
+
+.sprite-reminder {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -237px;
+}
+====================================================================================================
+stilesheet-emails.txt
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox {
+    width: 18px;
+    height: 18px;
+    background-position: -5px -5px;
+}
+
+.sprite-mark-as-done {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -33px;
+}
+
+.sprite-move-to {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -67px;
+}
+
+.sprite-pin-to-inbox {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -101px;
+}
+
+.sprite-snooze-until {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -135px;
+}
+
+.sprite-sweep {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -169px;
+}
+====================================================================================================
+stylesheet-menu.txt:
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bin {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px;
+}
+
+.sprite-create-new {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -39px;
+}
+
+.sprite-done {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -73px;
+}
+
+.sprite-drafts {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -107px;
+}
+
+.sprite-finance {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -141px;
+}
+
+.sprite-forums {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -175px;
+}
+
+.sprite-help-feedback {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -209px;
+}
+
+.sprite-inbox {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -243px;
+}
+
+.sprite-low-priority {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -277px;
+}
+
+.sprite-promos {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -311px;
+}
+
+.sprite-purchases {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -345px;
+}
+
+.sprite-reminders {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -379px;
+}
+
+.sprite-sent {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -413px;
+}
+
+.sprite-settings {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -447px;
+}
+
+.sprite-snoozed {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -481px;
+}
+
+.sprite-social {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -515px;
+}
+
+.sprite-spam {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -549px;
+}
+
+.sprite-travel {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -583px;
+}
+
+.sprite-unbundle {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -617px;
+}
+
+.sprite-updates {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -651px;
+}
+====================================================================================================
+stylesheet-nav.txt
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;

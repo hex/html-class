@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-ul {
     list-style-type: none;
+    font-family: sans-serif;
+}
+body {
+    background-color: #ECECEC;
 }
 .nav-bar {
     width: 100%;
@@ -14,7 +16,7 @@ ul {
     -moz-box-shadow: 0px 2px 15px 0px rgba(50, 50, 50, 0.72);
     box-shadow: 0px 2px 15px 0px rgba(50, 50, 50, 0.72);
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     font-size: 20px;
 }
 .nav-bar ul li {
@@ -22,7 +24,8 @@ ul {
     text-decoration: none;
 }
 .nav-bar-left {
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    
     float: left;
 }
 .nav-bar-left a {
@@ -74,7 +77,7 @@ ul {
 ::-moz-placeholder {
     color: white;
 }
-.switch {
+.toggle {
     display: inline-block;
     width: 50px;
     height: 17px;
@@ -158,44 +161,64 @@ input.cmn-toggle-round:checked + label:after {
     /* don't let pointer-events affect descendant elements */
     
     pointer-events: auto;
+    height: 370px;
+    width: 230px;
+    margin-left: -80px;
+    overflow: auto;
 }
 .hangouts-onclick {
     position: absolute;
-    z-index: 10;
+    z-index: 3;
     margin-top: 40px;
     /* use opacity to fake immediate toggle */
     
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s;
+    text-indent: 0;
+    background-color: #FFFFFF;
 }
 .hangouts-onclick li {
-    height: 50px;
+    height: 40px;
+    margin-top: 20px;
+}
+.hangouts-onclick .chat-window {
+    margin-top: 40px;
+    /*background-color: red;*/
 }
 .hangouts-onclick a {
-    height: 60px width: 100%
+    height: 60px;
+    width: 100%;
+    margin-top: 40px;
 }
 .hangouts-onclick .chat-window strong {
     float left;
 }
 .hangouts-onclick li input {
-    height: 60px;
+    height: 40px;
+    width: 230px;
     border: none;
     border-bottom: 2px solid #F5F5F5;
+    box-shadow: 0px 5px 15px -5px rgba(50, 50, 50, 0.75);
+    position: fixed;
+    margin-bottom: 20px;
+    color: #000000;
+    margin-top: -20px;
 }
 .hangouts-onclick li a span {
     float: left;
-    margin-top: 20px;
+    margin: 20px 0px 10px 40px;
 }
 .hangouts-onclick li a span strong {
     float: left;
     font-weight: normal;
     color: #808080;
+    font-size: 14px;
 }
 .hangouts-onclick li a span small {
     float: left;
     clear: both;
-    font-size: 11px;
+    font-size: 13px;
     color: #B3B3B3;
 }
 .nav-bar-right .apps {
@@ -223,74 +246,270 @@ input.cmn-toggle-round:checked + label:after {
     margin: 12px 30px 12px 6px;
     border-radius: 60px;
 }
-.nav-bar-right .hangouts {
-    background-image: url('images/spritesheet-nav.png');
-    background-position: -5px -47px;
+.main-menu {
+    position: fixed;
+    background-color: #FFFFFF;
+    overflow: auto;
+    width: 232px;
+    height: 100%;
+    margin-left: -232px;
+    z-index: 2;
+    box-shadow: 0px 2px 15px 0px rgba(50, 50, 50, 0.72);
+}
+.main-menu ul li {
+    background-image: url('images/spritesheet-menu.png');
     background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    margin: 16px 6px;
-    list-style-type: none;
+    display: block;
+    width: 100%;
 }
-.nav-bar-right .hangouts {
+.main-menu ul li span {
+    background-color: #FFFFFF;
+    line-height: 10px;
+}
+.main-menu ul li a {
+    height: 54px;
+    line-height: 24px;
+    width: 100%;
+    color: #787878;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.main-menu ul li:hover {
+    background-color: #F8F8F8;
+}
+.main-menu .inbox {
+    background-position: -5px -243px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .snoozed {
+    background-position: -5px -481px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .done {
+    background-position: -5px -73px;
+    text-indent: 40px;
+    margin: 15px 25px;
+    width: 100%;
+}
+.main-menu .drafts {
+    background-position: -5px -107px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .sent {
+    background-position: -5px -413px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .reminders {
+    background-position: -5px -379px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .trash {
+    background-position: -5px -5px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .spam {
+    background-position: -5px -549px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .travel {
+    background-position: -5px -583px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .purchases {
+    background-position: -5px -345px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .finance {
+    background-position: -5px -141px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .forums {
+    background-position: -5px -175px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .custom {
+    background-position: -5px -617px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .create {
+    background-position: -5px -39px;
+    text-indent: 40px;
+    margin: 15px 25px;
+}
+.main-menu .settings {
+    background-position: -5px -447px;
+    text-indent: 40px;
+    margin: 15px 25px;
+    height: 25px;
+}
+.main-menu .help {
+    background-position: -5px -209px;
+    text-indent: 40px;
+    margin: 15px 25px;
+    height: 25px;
+}
+.main-menu .skip {
+    background-image: none;
+    margin: 15px 0;
+    height: 25px;
+}
+.main-menu .bundled {
+    background-image: none;
+    margin: 15px 0;
+    height: 25px;
+}
+.main-menu ul li span {
+    background-image: initial;
+    color: #A2A2A2;
+    font-size: 13px;
+    margin-left: 25px;
+}
+.main-menu.show-main-menu {
+    transition: margin-left 0.2s ease;
+    margin-left: 0px;
+    margin-top: 56px;
+}
+.mail-container {
+    margin: 0 auto;
+    height: 100%;
+    width: 900px;
     position: relative;
-    display: inline-block;
-}
-.nav-bar-right .hangouts:before {
-    content: "";
-}
-.nav-bar-right .hangouts:focus {
-    /* clicking on label should toggle the menu */
-    
-    outline-width: 0;
-    pointer-events: none;
-}
-.nav-bar-right .hangouts:focus .hangouts-onclick {
-    /*  opacity is 1 in opened state (see below) */
-    
-    opacity: 1;
-    visibility: visible;
-    box-shadow: 0px 3px 12px 0px rgba(50, 50, 50, 0.75);
-    /* don't let pointer-events affect descendant elements */
-    
-    pointer-events: auto;
-}
-.hangouts-onclick {
-    position: absolute;
+    top: 56px;
     z-index: 1;
-    margin-top: 40px;
-    /* use opacity to fake immediate toggle */
-    
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0.5s;
 }
-.hangouts-onclick li {
-    height: 50px;
+.category h4 {
+    line-height: 60px;
+    font-size: 13px;
+    color: #999999;
+    margin-left: 20px;
 }
-.hangouts-onclick a {
-    height: 60px width: 100%
+.email {
+    height: 48px;
+    line-height: 48px;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    border: 1px solid #CECECE;
+    border-bottom: 0px;
+    width: 100%;
+    display: block;
 }
-.hangouts-onclick .chat-window strong {
-    float left;
-}
-.hangouts-onclick li input {
-    height: 60px;
-    border: none;
-    border-bottom: 2px solid #F5F5F5;
-}
-.hangouts-onclick li a span {
+.email span {
+    width: 230px;
     float: left;
-    margin-top: 20px;
+    color: #000000;
+    padding-left: 70px;
 }
-.hangouts-onclick li a span strong {
-    float: left;
+.email strong {
+    width: 650px;
+    float: right;
+    color: #000000;
+    display: inline;
     font-weight: normal;
-    color: #808080;
 }
-.hangouts-onclick li a span small {
-    float: left;
-    clear: both;
-    font-size: 11px;
-    color: #B3B3B3;
+.email strong small {
+    color: #999999;
+}
+.compose-menu {
+    /*Used for hover: display: none;*/
+    
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    text-decoration: none;
+}
+.compose-menu ul li {
+    background-image: url('images/spritesheet-compose.png');
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 20px;
+}
+.compose-menu ul li span a {
+    background-color: #565656;
+    padding: 2px;
+    border-radius: 3px;
+}
+.compose-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.compose-menu .ionut {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-position: -5px -121px;
+    text-indent: -107px;
+    border-radius: 50px;
+    -webkit-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    -moz-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+}
+.compose-menu .reminder {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-position: -5px -237px;
+    text-indent: -87px;
+    border-radius: 50px;
+    -webkit-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    -moz-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+}
+.compose-menu .invite {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-position: -5px -71px;
+    text-indent: -110px;
+    border-radius: 50px;
+    -webkit-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    -moz-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+}
+.compose-menu .compose {
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    background-position: -5px -171px;
+    text-indent: -80px;
+    border-radius: 50px;
+    -webkit-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    -moz-box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+    box-shadow: -2px 3px 7px 0px rgba(50, 50, 50, 0.48);
+}
+/*My try on hover, please review:
+.plus-button {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    text-decoration: none;
+    width: 56px;
+    height: 56px;
+}
+.plus-button a {
+    background-image: url('images/spritesheet-compose.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+.plus-button .plus {
+    width: 56px;
+    height: 56px;
+    background-position: -5px -171px;
+    border-radius: 50px;
+}
+.plus-button a:hover .compose-menu {
+    display: block;
 }
