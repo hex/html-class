@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inbox - hexaust@gmail.com</title>
+    <link href="images/favicon.ico" rel="icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="nav-bar-left">
+                <ul>
+                    <li>
+                        <abbr title="Main Menu">
+                            <a href="javascript:;" id="show-menu">MainMenu</a>
+                        </abbr>
+                    </li>
+                    <li>
+                        <h4>Inbox</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-bar-middle">
+                <input type="search" class="search-bar" name="search" placeholder="Search">
+                <div class="toggle">
+                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox" style="height: 0.1px; width: 0.1px;">
+                    <label for="cmn-toggle-1"></label>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-bar-right">
+                    <li tabindex="0" class="nav-bar-right hangouts">
+                        <ul class="hangouts-onclick">
+
+                            <li class="hangouts-onclick-search">
+                                <input type="search" placeholder="New Hangout">
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Ionut, Bogdan</strong>
+                                        <br>
+                                        <small>Me: http://jsbin.com/onclick/</small>
+                                    </span>
+                                    <br>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Ionut Mocanu</strong>
+                                        <br>
+                                        <small>Me: The ffucking</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Alexandru Geana</strong>
+                                        <br>
+                                        <small>BUILD SUCCESSFUL</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Bogdan Dolohan</strong>
+                                        <br>
+                                        <small>La fel</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Mihai Arosoaie</strong>
+                                        <br>
+                                        <small>si m-am trezit in top :))</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Alexandra Voinea</strong>
+                                        <br>
+                                        <small>Interesant</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Mihai Ignatiuc</strong>
+                                        <br>
+                                        <small>trebuia sa ma suni, vb azi</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Daniel, Mihai</strong>
+                                        <br>
+                                        <small>Me: Sigur</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="chat-window">
+                                        <strong>Ionut, Mihai</strong>
+                                        <br>
+                                        <small>Me: dap</small>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <abbr title="Apps">
+                            <a href="javascript:;" class="nav-bar-right apps">Apps</a>
+                        </abbr>
+                    </li>
+                    <li>
+                        <abbr title="0 Unread Notificatins"><a href="javascript:;" class="nav-bar-right notifications">Notifications</a>
+                        </abbr>
+                    </li>
+                    <li>
+                        <abbr title="Account Alexandru Geana (hexaust@gmail.com)">
+                            <a href="javascript:;" class="nav-bar-right account">Account</a>
+                        </abbr>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-menu">
+            <ul>
+                <li class="inbox">
+                    <abbr title="Inbox">
+                        <a href="javascript:;">Inbox</a>
+                    </abbr>
+                </li>
+                <li class="snoozed">
+                    <abbr title="Snoozed">
+                        <a href="javascript:;">Snoozed</a>
+                    </abbr>
+                </li>
+                <li class="done">
+                    <abbr title="Done">
+                        <a href="javascript:;">Done</a>
+                    </abbr>
+                </li>
+                <li class="drafts">
+                    <abbr title="Drafts">Ai
+                        <a href="javascript:;">Drafts</a>
+                    </abbr>
+                </li>
+                <li class="sent">
+                    <abbr title="Sent">
+                        <a href="javascript:;">Sent</a>
+                    </abbr>
+                </li>
+                <li class="reminders">
+                    <abbr title="Reminders">
+                        <a href="javascript:;">Reminders</a>
+                    </abbr>
+                </li>
+                <li class="trash">
+                    <abbr title="Trash">
+                        <a href="javascript:;">Trash</a>
+                    </abbr>
+                </li>
+                <li class="spam">
+                    <abbr title="Spam">
+                        <a href="javascript:;">Spam</a>
+                    </abbr>
+                </li>
+                <li class="bundled">
+                    <span>Bundled in the Inbox</span>
+                </li>
+                <li class="travel">
+                    <abbr title="Travel">
+                        <a href="javascript:;">Travel</a>
+                    </abbr>
+                </li>
+                <li class="purchases">
+                    <abbr title="Purchases">
+                        <a href="javascript:;">Purchases</a>
+                    </abbr>
+                </li>
+                <li class="finance">
+                    <abbr title="Finance">
+                        <a href="javascript:;">Finance</a>
+                    </abbr>
+                </li>
+                <li class="forums">
+                    <abbr title="Forums">
+                        <a href="javascript:;">Forums</a>
+                    </abbr>
+                </li>
+                <li class="skip">
+                    <span>Skip the inbox</span>
+                </li>
+                <li class="custom">
+                    <a href="javascript:;">[core]</a>
+                </li>
+                <li class="custom">
+                    <a href="javascript:;">angularJS</a>
+                </li>
+                <li class="custom">
+                    <a href="javascript:;">compass</a>
+                </li>
+
+                <li class="create">
+                    <a href="javascript:;">Create new...</a>
+                </li>
+                <li class="settings">
+                    <a href="javascript:;">Settings</a>
+                </li>
+                <li class="help">
+                    <a href="javascript:;">Help &amp; Feedback</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mail-container">
+            <div class="category">
+                <h4>Today</h4>
+                <a href="javascript" class="email">
+                    <span>Kongregate</span>
+                    <strong>AlexB1253 added you as a friend on Kongregate!
+                        <small>- Kongregate Hi AlexB1253 has added you as a friend.</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>Automoto.it</span>
+                    <strong>Ottombre mese dell'usato FirstHand
+                        <small>- Se non leggi correttamente questa email: clicca qui >> classe A Mercedes</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>PC Garage</span>
+                    <strong>Chestionar pentru comanda #2519076 la PC Garage
+                        <small>- PC Garage Magazin Promotii Noutati Info Contact Chestionar</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>iCloud</span>
+                    <strong>Too much porn stored on iCloud
+                        <small>- Dear Alexandru Geana, your iCloud can't stand so much porn. You are currently</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>Pinterest Weekly</span>
+                    <strong>We found some new pins for you!
+                        <small>- Have you seen these Pins yey? Pinterest Get the app! Android - iOS Hi Alexandru</small>
+                    </strong>
+                </a>
+            </div>
+
+            <div class="category">
+                <h4>Yesterday</h4>
+                <a href="javascript" class="email">
+                    <span>Mihai Ignatiuc</span>
+                    <strong>Fwd: Fw: Fair winds!
+                        <small>------Forwarded message------ From Andrada Balint</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>eMAG.ro</span>
+                    <strong>Cele mai bune carti au 40% discount
+                        <small>- Pentru a vizualiza varianta online a Newsletteru-ului eMAG click aici. Asigura-te ca nu</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>Jason Brownlee</span>
+                    <strong>Ant Colony System
+                        <small>- This week we are looking at the Ant Colony System algorithm</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>TunnelBear</span>
+                    <strong>TunnelBear Monthly Data Reset
+                        <small>- Hi Alex, we jut wanted to let you know that your title TunnelBear has received its monthly</small>
+                    </strong>
+                </a>
+            </div>
+            <div class="category">
+                <h4>September</h4>
+                <a href="javascript" class="email">
+                    <span>Riot Games</span>
+                    <strong>hexaust888, welcome to League of Legends
+                        <small>- View in Browser THE FIELDS OF JUSTICE AWAIT! Congratulations on your</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>Code School</span>
+                    <strong>This month at Code School
+                        <small>- A new course for our HTML/CSS Path, a new Soup to Bits screencast to snack on and a new brand</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>Command.io</span>
+                    <strong>Say hello to the Commando.io API
+                        <small>- Manage servers easily online and never type the same commands into multiple windows</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>Popular in your network</span>
+                    <strong>The Secret s of High-Performance Mobile Javascript Applications
+                        <small>- Popular in your network The Secrets of High Perfor..</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>accounts</span>
+                    <strong>RESPONSE REQUIRED: Please verify your email address
+                        <small>- RIOT GAMES Greetings hexaust, Please click the link below to</small>
+                    </strong>
+                </a>
+                <a href="javascript" class="email">
+                    <span>Medium</span>
+                    <strong>"We Only Get One Planet" and other stories
+                        <small>- Today on Medium People and collections you follow. No new activity.</small>
+                    </strong>
+                </a>
+            </div>
+        </div>
+        <!-- My try on hover, please review:
+        <div class="plus-button">
+            <a href="javascript:;" class="plus"></a>
+        </div> -->
+        <div class="compose-menu">
+            <ul>
+                <li class="ionut">
+                    <span>
+                        <a href="javascript:;">Ionut Mocanu</a>
+                    </span>
+                </li>
+                <li class="reminder">
+                    <span>
+                        <a href="javascript:;">Reminders</a>
+                    </span>
+                </li>
+                <li class="invite">
+                    <span>
+                        <a href="javascript:;">Invite to Inbox</a>
+                    </span>
+                </li>
+                <li class="compose">
+                    <span>
+                        <a href="javascript:;">Compose</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $('#show-menu').click(function() {
+        $('.main-menu').toggleClass('show-main-menu');
+    });
+    </script>
+
+</body>
+
+</html>
