@@ -1,0 +1,15 @@
+.input-container input{
+	width: 1122px;
+	height: 36px;
+	background-color: rgba(255,255,255,0.2);
+	border: none;
+	position: relative;
+	background-image: url('images/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -5px -611px;
+    padding:2px;
+    padding-left: 50px;
+    font-size: 15px;
+    color:white ;
+    margin: 0 auto;
+    border: 1px solid red;
