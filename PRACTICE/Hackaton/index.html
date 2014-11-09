@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shell Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Shell Game</h1>
+        <h3>Take your guess:</h3>
+        <div class="game">
+            <div class="result">
+                <h1 id="result-text"></h1>
+                <a href="javascript:;" id="retry-button">Try again</a>
+            </div>
+            <div class="cup-container">
+                <a href="javascript:;" id="left-cup" class="cup"></a>
+                <a href="javascript:;" id="center-cup" class="cup"></a>
+                <a href="javascript:;" id="right-cup" class="cup"></a>
+            </div>
+        </div>
+        <div class="score">
+            <span id="gamesWon"></span>
+            <span id="gamesLost"></span>
+        </div>
+    </div>
+
+    <script>
+    var won = 0;
+    var lost = 0;
+    var showResult = function(result) {
+        $('#result-text').text(result);
+        $('.result').show();
+    };
+    $('#retry-button').click(function() {
+        $('.result').hide();
+    });
+    var showWon = function(scoreWon) {
+        $('#gamesWon').text(scoreWon);
+    };
+    var showLost = function(scoreLost) {
+        $('#gamesLost').text(scoreLost);
+    };
+    var userChoice = function(choice) {
+
+    };
+
+    $('#left-cup').click(function() {
+        compare("left")
+    });
+    $('#center-cup').click(function() {
+        compare("center")
+    });
+    $('#right-cup').click(function() {
+        compare("right")
+    });
+
+    console.log("User chose: " + userChoice);
+
+    var getComputerChoice = function() {
+        var computerChoice = Math.random();
+        var computerOption = "";
+        if (computerChoice < 0.34) {
+            computerOption = "left";
+        } else if (computerChoice <= 0.67) {
+            computerOption = "center";
+        } else {
+            computerOption = "right";
+        }
+        console.log("Computer chose: " + computerOption);
+        return computerOption;
+
+    }
+
+    var compare = function(choice) {
+        if (choice === getComputerChoice()) {
+            won++;
+            showWon('Games won: ' + won);
+            showResult("Congrats, you guessed correct!");
+        } else {
+            lost++;
+            showLost('Games lost: ' + lost);
+            showResult("Your luck struck out :(");
+        }
+    };
+    </script>
+</body>
+
+</html>
