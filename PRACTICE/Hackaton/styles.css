@@ -28,12 +28,33 @@ body {
     padding: 20px;
     border-radius: 5px;
     background-color: #3FB8AF;
+    position: relative;
+}
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: #A82743;
+    float: left;
+    position: absolute;
+    bottom: 50px;
+    left: 95px;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 1px grey;
+    display: none;
+}
+.ball.center {
+    left: 275px;
+    display: block;
+}
+.ball.right {
+    left: 455px;
+    display: block;
 }
 .score {
-    width: 400px;
+    width: 550px;
     margin: 0 auto;
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 .score #gamesWon {
@@ -53,9 +74,15 @@ body {
     box-shadow: 2px 2px 3px #888888;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    position: relative;
+    z-index: 15;
 }
 .cup:hover {
     box-shadow: 5px 5px 8px #888;
+}
+.cup:active {
+    margin: 5px 49px;
+    transition: 0.05s;
 }
 .result {
     height: 198px;
@@ -66,8 +93,7 @@ body {
     margin-left: -19px;
     border-radius: 5px;
     display: none;
-    z-index: 10;
-    transition-y: ;
+    z-index: 20;
 }
 .result h1 {
     color: grey;

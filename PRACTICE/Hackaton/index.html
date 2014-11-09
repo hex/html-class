@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Shell Game</title>
+    <title>Shell Game Hackaton</title>
+    <link href="favicon.png" rel="icon" type="image/png">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="jquery-2.1.1.min.js"></script>
 </head>
@@ -22,6 +23,8 @@
                 <a href="javascript:;" id="center-cup" class="cup"></a>
                 <a href="javascript:;" id="right-cup" class="cup"></a>
             </div>
+            <span id="change-ball" class="ball"></span>
+
         </div>
         <div class="score">
             <span id="gamesWon"></span>
@@ -50,13 +53,13 @@
     };
 
     $('#left-cup').click(function() {
-        compare("left")
+        compare("left");
     });
     $('#center-cup').click(function() {
-        compare("center")
+        compare("center");
     });
     $('#right-cup').click(function() {
-        compare("right")
+        compare("right");
     });
 
     console.log("User chose: " + userChoice);
@@ -72,15 +75,22 @@
             computerOption = "right";
         }
         console.log("Computer chose: " + computerOption);
+
+
+
         return computerOption;
 
     }
+
 
     var compare = function(choice) {
         if (choice === getComputerChoice()) {
             won++;
             showWon('Games won: ' + won);
+            $('#change-ball').attr("class", "ball " + choice);
+            $('.result').show();
             showResult("Congrats, you guessed correct!");
+
         } else {
             lost++;
             showLost('Games lost: ' + lost);
