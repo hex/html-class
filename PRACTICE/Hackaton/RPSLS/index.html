@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+    <div class="game">
+        <div class="result"></div>
+        <div class="player-choices">
+            <button onclick="rpsls('Rock')">Rock</button>
+            <button onclick="rpsls('Paper')">Paper</button>
+            <button onclick="rpsls('Scissors')">Scissors</button>
+            <button onclick="rpsls('Lizard')">Lizard</button>
+            <button onclick="rpsls('Spock')">Spock</button>
+        </div>
+        <h3>VS</h3>
+        <div class="computer-choices">
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissors</button>
+            <button>Lizard</button>
+            <button>Spock</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var nameToNumber = function(name) {
+        var nameNumber;
+        if (name == "Rock") {
+            nameNumber = 0;
+        } else if (name == "Paper") {
+            nameNumber = 1;
+        } else if (name == "Scissors") {
+            nameNumber = 2;
+        } else if (name == "Lizard") {
+            nameNumber = 3;
+        } else {
+            nameNumber = 4;
+        }
+
+
+        return nameNumber;
+    };
+    var numberToName = function(number) {
+        var numberName;
+        if (number === 0) {
+            numberName = "Rock";
+        } else if (number == 1) {
+            numberName = "Paper";
+        } else if (number == 2) {
+            numberName = "Scissors";
+        } else if (number == 3) {
+            numberName = "Lizard";
+        } else {
+            numberName = "Spock";
+        }
+        return numberName;
+    };
+    var rpsls = function(playerChoice) {
+        var playerNumber;
+        playerNumber = nameToNumber(playerChoice);
+        console.log("Player choice: " + numberToName(playerNumber));
+        var computerName;
+        computerNumber = Math.floor(Math.random() * 5) + 0;
+        computerName = numberToName(computerNumber);
+        console.log("Computer choice: " + computerName);
+        var difference;
+        difference = (playerNumber - computerNumber) % 5;
+        if (difference === 0) {
+            console.log("TIE");
+        } else if (difference == 1) {
+            console.log("Player is winner");
+        } else if (difference == 2) {
+            console.log("Player is winner");
+        } else if (difference == 3) {
+            console.log("Computer is winner");
+        } else {
+            console.log("Computer is winner");
+        }
+        return "The result is: " + computerNumber;
+    };
+    rpsls("Rock");
+    rpsls("Spock");
+    rpsls("Paper");
+    rpsls("Lizard");
+    rpsls("Scissors");
+    </script>
+</body>
+
+</html>

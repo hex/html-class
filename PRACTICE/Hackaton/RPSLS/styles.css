@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+.game {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #063940;
+}
+.player-choices button {
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    background: #1A5D65;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    outline: none;
+}
+.player-choices button:hover {
+    background: #3C8E77;
+    cursor: pointer;
+}
+h3 {
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    color: rgb(152, 145, 145);
+}
+.computer-choices button {
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    background: grey;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    outline: none;
+}
+.result {
+    position: absolute;
+    width:
+}
